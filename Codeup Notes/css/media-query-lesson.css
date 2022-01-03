@@ -1,0 +1,23 @@
+header {
+    display: flex;
+
+}
+/*Regular css is still read regularly if it is not changed in the media tags*/
+
+/*body {*/
+/*    background-color: orange; !important; !*important tag overwrites any changes that would be made in the different media changes*!*/
+/*}*/
+
+@media screen and (min-width: 300px) { /*min width means 300px and up*/
+    body {
+        background-color: blue;
+    }
+}
+/*if there are styles that work do to pre existing code
+ex: display flex and position do not need to declare it again in media if not changed*/
+
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    body {
+        background-color: red;
+    }
+}

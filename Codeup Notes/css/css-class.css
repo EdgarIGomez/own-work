@@ -1,0 +1,30 @@
+#purple{
+    color: purple;
+}
+
+/*First step for css is identify the element you want to style*/
+/*tag name - will apply to all of the tag*/
+p{
+    color: gray;
+}
+/*.class="value" is another identifier will apply to each element with the same class value*/
+.darkred{
+    color: darkred;
+}
+/*#idvalue identifier for elements with a unique id will only affect element with the "unique" id*/
+#subTitle{
+    color: darkgreen;
+}
+
+/*SYNTAX*/
+
+/*selector {*/
+/*    property: value;*/
+/*!*    all css styling goes here*!*/
+/*}*/
+/* * can represents all descendents in the whatever parent its under
+*/
+/*unset will take away a color that was set at from an earlier style*/
+
+/*more specific styles will override generic tag styles even if those are lower in the code*/
+/*recommended resource for colors is coolors.something*/

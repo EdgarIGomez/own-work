@@ -1,0 +1,84 @@
+.container {
+    height: 500px;
+    width: 500px;
+    border: 10px solid black;
+    position: relative;
+    top: 50px;
+    left: 33%;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /*border-radius: 50%;*/
+    text-align: center;
+}
+
+/*#first {*/
+/*    background-color: indianred;*/
+/*    float: left;*/
+/*}*/
+
+/*#one {*/
+/*    text-align: left;*/
+/*    height: 100px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*#second {*/
+/*    background-color: lightblue;*/
+/*    float: right;*/
+/*}*/
+
+/*#two {*/
+/*    text-align: right;*/
+/*    height: 100px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*#third {*/
+/*    background-color: mediumpurple;*/
+/*    float: left;*/
+/*}*/
+
+/*#three {*/
+/*    text-align: left;*/
+/*    height: 100px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*#fourth {*/
+/*    background-color: greenyellow;*/
+/*    float: right;*/
+/*}*/
+
+/*#four {*/
+/*    text-align: right;*/
+/*    height: 100px;*/
+/*    margin: 10px;*/
+/*}*/
+
+#first {
+    background-color: indianred;
+    position: relative;
+}
+
+#second {
+    background-color: lightblue;
+    position: relative;
+    bottom: 100px;
+    left: 400px;
+}
+
+#third {
+    background-color: greenyellow;
+    position: relative;
+    top: 200px;
+}
+
+#fourth {
+    background-color: mediumpurple;
+    position: relative;
+    top: 100px;
+    left: 400px;
+}

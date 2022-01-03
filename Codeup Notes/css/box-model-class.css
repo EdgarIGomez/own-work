@@ -1,0 +1,13 @@
+#divOne {
+    border: 2px solid black;
+    padding: 35px;
+    height: 150px;
+    margin-bottom: 35px;
+}
+/*margins overlap if between block elements*/
+#divTwo {
+    border: 2px solid black;
+    padding: 35px;
+    margin-top: 15px;
+    background-color: greenyellow;
+}

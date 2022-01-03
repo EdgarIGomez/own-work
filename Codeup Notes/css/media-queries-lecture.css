@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer li {
+    list-style-type: none;
+
+}
+
+.footer li a {
+    text-decoration: none;
+    padding: 8px;
+    margin: 6px;
+}
+
+/*.banner*/
+@media screen and (max-width: 580px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /*align-items: normal;*/
+        justify-content: center;
+    }
+
+}

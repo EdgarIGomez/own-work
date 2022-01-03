@@ -1,0 +1,67 @@
+.container {
+    height: 450px;
+    width: 450px;
+    margin: 100px;
+    border: 5px solid black;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /*display: inline-block;*/
+    border: 3px solid dimgray;
+    margin: 5px;
+    /*padding: 40px;*/
+}
+
+#red{
+    background-color: indianred;
+}
+
+#blue {
+    background-color: lightblue;
+}
+
+#green {
+    background-color: green;
+}
+
+#purple {
+    background-color: mediumpurple;
+}
+
+#pink {
+    background-color: lightpink;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#third {
+    background-color: burlywood;
+}
+
+#fourth {
+    background-color: darkgoldenrod;
+}
+
+p{
+    text-align: right;
+    margin: 10px;
+}
+
+/*relative positioning changes where it goes relative to its container*/
+/*absolute will break document flow*/
+
+/*for flexbox*/
+
+/*when is rows left to right is the main axis use justify-content to move left and right and align-items to move up and down*/
+
+/*when in columns up and down is the main axis so justify axis now moves up and down and align items the opposite*/
+
+/*when using row-reverse or column-reverse the way the axis work are reversed*/
+
+/*align-self moves around the second axis point like align items*/
+
+/*flex-grow works only for the child elements the bigger values grows the most and every other item grows less if they have smaller grow values*/

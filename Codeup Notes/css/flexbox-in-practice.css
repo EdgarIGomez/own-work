@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+nav {
+    display: flex;
+    /*justify-content: space-between;*/
+    background: lightgrey;
+}
+
+.nav_section {
+    display: flex;
+    width: 100%;
+}
+
+.nav_section > * {
+    padding: 2px 4px;
+}
+
+.nav_item{
+    transition: 250ms;
+}
+
+.nav_item:hover {
+    /*margin: 10px;*/
+    background-color: deepskyblue;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.separator {
+    flex-grow: 1;
+}

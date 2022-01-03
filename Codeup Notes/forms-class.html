@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form method="POST" action="https://request-inspector.glitch.me/"><!-- post writes data to a database looks like a javascript object always has a body will encrypt sensitive information-->
+    <!--get always has a query and put the inputs into a key value pairs everything is in string which gets posted into the url-->
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text"><!-- if you want to prepopulate with erasable text use value if want ghost text use placeholder-->
+        <br>
+
+        <label for="birthday">Birthday Date</label><!--all input types can be prepopulated with info-->
+        <input id="birthday" name="birthday" type="date">
+        <br>
+
+        <label for="bio">Bio</label>
+        <br>
+        <textarea id="bio" name="bio" cols="25" rows="5" placeholder="Tell_us_about_yourself"></textarea><!--to prepopulate here with erasable text write between the tags-->
+        <br>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+        <br>
+
+        <label for="ValidatePassword">Confirm Password</label>
+        <input id="ValidatePassword" name="ValidatePassword" type="password">
+        <br>
+
+        <label for="">Gender</label>
+        <br>
+        <input type="radio" name="gender" value="male"> Male
+        <br>
+        <input type="radio" name="gender" value="Female"> Female
+        <br>
+        <input type="radio" name="gender" value="Other"> Other
+        <input type="text" name="other_gender">
+        <br>
+
+        <label for="hobbies">Your Hobby</label>
+        <select name="hobbies" id="hobbies"><!--can make multiple by putting the multiple attribute in the opening select tag-->
+            <option value="stampCollector">Stamp Collecting</option>
+            <option value="funkoCollector">Funko Collecting</option>
+            <option value="legoMiniFigure">Lego Mini Figure Collecting</option>
+        </select><!--for questions with multiple answers, checkboxes with the same name and with there value as their name-->
+        <br>
+
+        <label for="emailSubscription">Would you like to sign up for our email subscription</label>
+        <input id="emailSubscription" name="emailSubscription" type="checkbox"><!--returns on not true when checked-->
+        <br><!-- disabled can be used to stop an answer from being used has specific used ex: disabling submit button until input is put in-->
+
+        <input type="hidden" name="referred" value="googleJobs">
+
+        <input type="submit">
+    </form>
+
+<!--https://www.google.com/search?q=cup&sxsrf=AOaemvLWYIwsIeUSUaAhw_uGpIvMMfxPTw%3A1639065977943&source=hp&ei=eSmyYfynNpWyqtsP9ZqJ-A0&iflsig=ALs-wAMAAAAAYbI3id-P21csHfkG7lAdgCQB-HNT0T44&ved=0ahUKEwi8yIDLjNf0AhUVmWoFHXVNAt8Q4dUDCAk&uact=5&oq=cup&gs_lcp=Cgdnd3Mtd2l6EANQAFgAYABoAHAAeACAAQCIAQCSAQCYAQA&sclient=gws-wiz-->
+<!--? denotes that everything after is query string the above string has the query strings q= sxsrf= source= ei=-->
+<!--    <form action="https://google.com" method="GET">&lt;!&ndash;make sure to remember key value pair remember it get always has query string example above&ndash;&gt;-->
+<!--        <input type="text" name="q">&lt;!&ndash;q is query can technically be anything when in the name&ndash;&gt;-->
+<!--        <input type="submit" value="google search">-->
+<!--    </form>-->
+</body>
+</html>
