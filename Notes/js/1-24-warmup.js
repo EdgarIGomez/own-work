@@ -8,9 +8,9 @@ function addAllNumbers(numbers) {
     console.log(number)
     for(let i = 0; i < number.length; i++){
 
-         let sumTotal = sum + parseInt(number[i])
-         console.log(sumTotal)
-    }
+          sum += parseInt(number[i])
 
+    }
+    console.log(sum)
 }
-addAllNumbers("42958372")
+addAllNumbers("917485")
