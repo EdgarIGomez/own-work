@@ -45,30 +45,51 @@ function noDuplicates(array) {
 // example input: "adsjfdsfsfjsdjfhacabcsbajda"
 // expected output: { a: 5, b: 2, c: 2, d: 4, f: 4, j: 4, s: 5 }
 
-function howMuchOfEachDuplicate(string) {
-    let holder = {}
-    let stringToArray = string.split("")
-    let unique = noDuplicates(stringToArray).sort()
-    console.log(stringToArray)
-    unique.forEach(function(array){
-        for(let i = 0; i < stringToArray.length; i++){
-            if(array === stringToArray[i]){
-                if(!holder.hasOwnProperty(array)){
-                    holder[array] = 1
-                } else {
-                    holder[array]++
-                }
-            }
-        }
-    });
-    for(const objectKeys in holder) {
-        console.log(objectKeys)
-        console.log(holder[objectKeys])
-        if (holder[objectKeys] === 1) {
-            delete holder[objectKeys]
+// function howMuchOfEachDuplicate(string) {
+//     let holder = {}
+//     let stringToArray = string.split("")
+//     let unique = noDuplicates(stringToArray).sort()
+//     console.log(stringToArray)
+//     unique.forEach(function(array){
+//         for(let i = 0; i < stringToArray.length; i++){
+//             if(array === stringToArray[i]){
+//                 if(!holder.hasOwnProperty(array)){
+//                     holder[array] = 1
+//                 } else {
+//                     holder[array]++
+//                 }
+//             }
+//         }
+//     });
+//     for(const objectKeys in holder) {
+//         console.log(objectKeys)
+//         console.log("number", holder[objectKeys])
+//         if (holder[objectKeys] === 1) {
+//             delete holder[objectKeys]
+//         }
+//     }
+//     return holder
+// }
+//
+// console.log(howMuchOfEachDuplicate("adsjfdsfsfjsdjfhacabcsbajda"));
+
+//Javascript - morning warmup
+// Write a function that places all negative integers at the end of an array.
+// Example input: [-2,5,8,-3,3,5,-9,6]
+// Expected output: [5,8,3,5,6,-2,-3,-9]
+
+function negativeNum(array) {
+    let positive = [];
+    let negative = [];
+    for(let i = 0; i < array.length; i++){
+        if(array[i] >= 0){
+            positive.push(array[i]);
+        }else {
+            negative.push(array[i]);
         }
     }
-    return holder
+   return positive.concat(negative);
+
 }
 
-console.log(howMuchOfEachDuplicate("adsjfdsfsfjsdjfhacabcsbajda"));
+console.log(negativeNum([-2,5,8,-3,3,5,-9,6]));
